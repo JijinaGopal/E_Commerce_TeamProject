@@ -17,12 +17,13 @@ engine = create_engine(st.secrets["db_url"])
 
 # List of tables and CSV file paths
 tables = {
-    "orders": r"C:\Users\Administrator\Desktop\Internship\Digital Analytics\data\orders.csv",
-    "order_items":r"C:\Users\Administrator\Desktop\Internship\Digital Analytics\data\order_items.csv",
-    "products": r"C:\Users\Administrator\Desktop\Internship\Digital Analytics\data\products.csv",
-    "order_item_refunds":r"C:\Users\Administrator\Desktop\Internship\Digital Analytics\data\order_item_refunds.csv",
-    "website_pageviews":r"C:\Users\Administrator\Desktop\Internship\Digital Analytics\data\website_pageviews.csv",
-    "website_sessions":r"C:\Users\Administrator\Desktop\Internship\Digital Analytics\data\website_sessions.csv"
+    "orders": r"C:\Users\Administrator\Desktop\Internship\Digital Analytics_All\data\orders.csv",
+    "order_items":r"C:\Users\Administrator\Desktop\Internship\Digital Analytics_All\data\order_items.csv",
+    "products": r"C:\Users\Administrator\Desktop\Internship\Digital Analytics_All\data\products.csv",
+    "order_item_refunds":r"C:\Users\Administrator\Desktop\Internship\Digital Analytics_All\data\order_item_refunds.csv",
+    "website_pageviews":r"C:\Users\Administrator\Desktop\Internship\Digital Analytics_All\data\website_pageviews.csv",
+    "website_sessions":r"C:\Users\Administrator\Desktop\Internship\Digital Analytics_All\data\website_sessions.csv",
+    "website_sessions":r"C:\Users\Administrator\Desktop\Internship\Digital Analytics_All\data\w_sessions.csv"
 }
 
 # Upload each table to the DB
