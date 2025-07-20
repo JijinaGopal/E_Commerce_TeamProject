@@ -674,8 +674,10 @@ A fresh-faced startup on a mission to deliver high-quality, huggable stuffed toy
         st.markdown("---")
         st.markdown("### 📊 Sessions by Weekday")
 
-        w_sessions["created_at"] = w_sessions["created_at"] + pd.Timedelta(hours=12)
-        w_sessions["created_at"] = w_sessions["created_at"].dt.tz_localize("Asia/Kolkata") 
+        if w_sessions["created_at"].dt.tz is None:
+            w_sessions["created_at"] = w_sessions["created_at"].dt.tz_localize("Asia/Kolkata")
+        else:
+            w_sessions["created_at"] = w_sessions["created_at"].dt.tz_convert("Asia/Kolkata") 
 
 
         # Step 2: Extract weekday names
