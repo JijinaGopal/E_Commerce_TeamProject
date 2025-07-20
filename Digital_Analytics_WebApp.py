@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 @st.cache_data
 
 def load_csv(filename):
-    return pd.read_csv(os.path.join("Data", filename))
+    return pd.read_csv(os.path.join("data", filename))
 
 
 
