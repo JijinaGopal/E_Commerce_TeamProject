@@ -674,6 +674,8 @@ A fresh-faced startup on a mission to deliver high-quality, huggable stuffed toy
         st.markdown("---")
         st.markdown("### 📊 Sessions by Weekday")
 
+        w_sessions["created_at"] = w_sessions["created_at"].dt.tz_localize("UTC").dt.tz_convert("Asia/Kolkata")
+
 
         # Step 2: Extract weekday names
         w_sessions["weekday"] = w_sessions["created_at"].dt.day_name()
