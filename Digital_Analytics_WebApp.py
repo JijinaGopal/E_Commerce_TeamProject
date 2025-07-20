@@ -675,8 +675,7 @@ A fresh-faced startup on a mission to deliver high-quality, huggable stuffed toy
         st.markdown("### 📊 Sessions by Weekday")
 
 
-        # Step 1: Convert to datetime if not already
-        w_sessions["created_at"] = pd.to_datetime(w_sessions["created_at"])
+              
 
         # Step 2: Extract weekday names
         w_sessions["weekday"] = w_sessions["created_at"].dt.day_name()
